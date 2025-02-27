@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pc Pilot</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .phone{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 430px;
+            height: 1037px;
+            background-color: brown;
+        }
+        #p1{
+            position: absolute;
+            left: 25px;
+            top: 20px;
+            width: 79.66px;
+            height: 28px;
+            font-size: 23px;
+        }
+        #menu{
+            position: absolute;
+            left: 349px;
+            top: 6px;
+            width: 55px;
+            height: 55px;
+        }
+        #first_h1{
+            position: absolute;
+            left: 56px;
+            top: 84px;
+            width: 318px;
+            height: 97px;
+            font-size: 40.32px;
+        }
+        #p2{
+            position: absolute;
+            left: 56px;
+            top: 192.5px;
+            width: 319px;
+            height: 57px;
+            font-size: 15.84px;
+            text-align: center;
+        }
+        #btn1{
+            position: absolute;
+            left: 135px;
+            top: 273px;
+            width: 160.04px;
+            height: 49.6px;
+            background-color: #4FD1C5;
+        }
+        #p3{
+            position: absolute;
+            left: 25px;
+            top: 12px;
+            width: 110px;
+            height: 24px;
+            font-size: 15.5px;
+            font-weight: 600;
+            color: white;
+        }
+        #second_h1{
+            position: absolute;
+            left: 165px;
+            top: 369px;
+            width: 101px;
+            height: 18px;
+            font-size: 15.84px;
+        }
+        #card1, #card2, #card3{
+            position: absolute;
+            top: 429px;
+            width: 70.55px;
+            height: 55px;
+            background-color: #D9D9D9;
+        }
+        #card1{
+            left: 23px;
+        }
+        #card2{
+            left: 180px;
+        }
+        #card3{
+            left: 333px;
+        }
+        #img_card1, #img_card2, #img_card3{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 15.04px;
+            height: 15.04px;
+        }
+        #third_h1, #fourth_h1, #fivth_h1{
+            position: absolute;
+            left: 5px;
+            top: 16px;
+            font-size: 6px;
+            text-align: left;
+        }
+        #p4, #p5, #p6{
+            position: absolute;
+            left: 5px;
+            top: 23px;
+            font-size: 5px;
+            text-align: left;
+        }
+        #third_h1{
+            width: 46px;
+            height: 6px;
+        }
+        #p4{
+            width: 65px;
+            height: 18px;
+        }
+        #fourth_h1{
+            width: 49px;
+            height: 7px;
+        }
+        #p5{
+            width: 59px;
+            height: 18px;
+        }
+        #fivth_h1{
+            width: 55px;
+            height: 8px;
+        }
+        #p6{
+            width: 64px;
+            height: 19px;
+        }
+        #sixth_h1{
+            position: absolute;
+            left: 157px;
+            top: 530px;
+            width: 117px;
+            height: 18px;
+            font-size: 15.84px;
+        }
+        #video{
+            position: absolute;
+            left: 13px;
+            top: 559.5px;
+            width: 403.2px;
+            height: 226.8px;
+        }
+        #command{
+            position: absolute;
+            left: 0px;
+            top: 809px;
+            width: 430px;
+            height: 73px;
+        }
+        #Download{
+            position: absolute;
+            left: 23px;
+            top: 905px;
+            width: 384px;
+            height: 109px;
+        }
+        #seventh_h1{
+            position: absolute;
+            left: 135px;
+            top: 25px;
+            width: 114px;
+            height: 13px;
+            font-size: 10px;
+        }
+        #p7{
+            position: absolute;
+            left: 92px;
+            top: 43px;
+            width: 200px;
+            height: 8px;
+            font-size: 6px;
+        }
+        #btn2{
+            position: absolute;
+            left: 157px;
+            top: 62px;
+            width: 69px;
+            height: 23px;
+        }
+        #p8{
+            position: absolute;
+            left: 21px;
+            top: 9px;
+            width: 29px;
+            height: 5px;
+            font-size: 4px;
+        }
+        .menu-dropdown {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 65px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border-radius: 4px;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .menu-dropdown.active {
+            display: block;
+        }
+        .menu-dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-dropdown ul li {
+            padding: 8px 20px;
+        }
+        .menu-dropdown ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+        }
+        .menu-dropdown ul li:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+<div class="phone">
+<p id="p1">PCPilot</p>
+<img id="menu" src="menu.png" alt="">
+<div class="menu-dropdown">
+    <ul>
+        <li><a href="#command">Features</a></li>
+        <li><a href="#video">Demo</a></li>
+        <li><a href="#Download">Get Started</a></li>
+    </ul>
+</div>
+<h1 id="first_h1">Control Your PC From Anywhere</h1>
+<p id="p2">Take command of your computer remotely through Telegram. Simple, secure, and seamless control at your fingertips.</p>
+<button id="btn1"><p id="p3">Get Started  →</p></button>
+<h1 id="second_h1">Key Features</h1>
+<div id="card1">
+    <img id="img_card1" src="1.png" alt="">
+    <h1 id="third_h1">Mobile Control</h1>
+    <p id="p4">Control your PC from your phone using Telegram's familiar interface</p>
+</div>
+<div id="card2">
+    <img id="img_card2" src="2.png" alt="">
+    <h1 id="fourth_h1">Remote Access</h1>
+    <p id="p5">Access your computer's functions from anywhere in the world</p>
+</div>
+<div id="card3">
+    <img id="img_card3" src="3.png" alt="">
+    <h1 id="fivth_h1">Quick Commands</h1>
+    <p id="p6">Execute common tasks with simple Telegram commands</p>
+</div>
+<h1 id="sixth_h1">See It In Action</h1>
+<video id="video" src="eng_new.mp4"></video>
+<img id="command" src="command.png" alt="">
+<div id="Download">
+    <h1 id="seventh_h1">Ready to Take Control?</h1>
+    <p id="p7">Start controlling your PC remotely with our easy-to-use Telegram bot.</p>
+    <button id="btn2"><p id="p8">Download Now</p></button>
+</div>
+</div>
+
+<script>
+    let btn1 = document.querySelector('#btn1').addEventListener('click', function(){
+        window.location.href = '#Download'
+    })
+    let btn2 = document.querySelector('#btn2').addEventListener('click', function(){
+        window.location.href = 'https://drive.google.com/drive/u/1/folders/1Sz-M5Va0k6l5C1lkRKGuWdE7HvZ1pMZ1'
+    })
+
+    const menuButton = document.querySelector('#menu');
+    const menuDropdown = document.querySelector('.menu-dropdown');
+
+    menuButton.addEventListener('click', function() {
+        menuDropdown.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+            menuDropdown.classList.remove('active');
+        }
+    });
+</script>
+</body>
+</html>
